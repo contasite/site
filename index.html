@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para você ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pagina-inicial">
+  <div class="coração" onclick="abrirCarta()">
+    ❤️
+  </div>
+
+<script>
+    function abrirCarta() {
+      const coracao = document.querySelector(".coração");
+      
+      // Executa animação
+      coracao.classList.add("abrindo");
+
+      // Espera 12 segundos para mudar de página
+      setTimeout(() => {
+        window.location.href = "felicitacoes.html";
+      }, 1000); // 12 segundos
+    }
+  </script>
+</body>
+</html>
